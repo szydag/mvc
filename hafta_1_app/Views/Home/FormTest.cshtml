@@ -1,0 +1,114 @@
+﻿
+@{
+    ViewBag.Title = "FormTest";
+    Layout = "~/Views/Shared/Layout2.cshtml";
+}
+
+
+<a href="/Home/FormTest?textReturn=Oğuzhan uymaz&o=wejkhejlw">Sayfayı Çağır</a>
+<hr />
+<h2>Sonuçlar</h2>
+<textarea class="form-control">@ViewBag.model</textarea>
+
+
+<div>
+    <h2>Form1 Post</h2>
+    <form method="post" action="formPost">
+        <input type="hidden" name="hidden_value" value="ktun_yazilim_post"/>
+        <table class="table table-bordered">
+            <tr>
+                <td>Text1:</td>
+                <td>
+                    <input type="text" name="text1" />
+                </td>
+            </tr>
+            <tr>
+                <td>Text2:</td>
+                <td>
+                    <textarea name="text2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Select(Dropdown):</td>
+                <td>
+                    <select name="select1">
+                        <option value="23">ilk seçenek</option>
+                        <option value="42">ikinci seçenek</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Radio Button:</td>
+                <td>
+                    <input type="radio" name="radio_btn" value="1" />
+                    <input type="radio" name="radio_btn" value="2" />
+                    <input type="radio" name="radio_btn" value="3" />
+                </td>
+            </tr>
+            <tr>
+                <td>Checkbox:</td>
+                <td>
+                    <input type="checkbox" name="check_btn" value="1" />
+                    <input type="checkbox" name="check_btn" value="2" />
+                    <input type="checkbox" name="check_btn" value="3" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" class="btn btn-block">Gönder</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div style="margin-top:200px">
+    <h2>Form2 Get</h2>
+    <form method="get" action="/home/formGet">
+        <input type="hidden" name="hidden_value" value="ktun_yazilim_get" />
+        <table class="table table-bordered">
+            <tr>
+                <td>Text1:</td>
+                <td>
+                    <input type="text" name="text1" />
+                </td>
+            </tr>
+            <tr>
+                <td>Text2:</td>
+                <td>
+                    <textarea name="text2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Select(Dropdown):</td>
+                <td>
+                    <select name="select1">
+                        <option value="23">ilk seçenek</option>
+                        <option value="42">ikinci seçenek</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Radio Button:</td>
+                <td>
+                    <input type="radio" name="radio_btn" value="1" />
+                    <input type="radio" name="radio_btn" value="2" />
+                    <input type="radio" name="radio_btn" value="3" />
+                </td>
+            </tr>
+            <tr>
+                <td>Checkbox:</td>
+                <td>
+                    <input type="checkbox" name="check_btn" value="1" />
+                    <input type="checkbox" name="check_btn" value="2" />
+                    <input type="checkbox" name="check_btn" value="3" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" class="btn btn-block">Gönder</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

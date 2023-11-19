@@ -1,0 +1,155 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<!--Hypertext Markup Language-->
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Html Tags Sayfası</title><!--html sayfanın isimlendirilmesi için kullanılır. Sekme üzerinde yazan text ifadesi-->
+   
+    
+    <!--CSS: Cascading Style Sheets -->
+    <style>
+        .table {
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+
+            .table,
+            .table tr,
+            .table td,
+            .table th {
+                border: 1px solid #bbb;
+                padding: 5px;
+            }
+
+        #Baslik_Div {
+            background-color: red;
+        }
+
+        p {
+            color: blue;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="Baslik_Div">
+        <h2>Başlık yapısı</h2>
+
+
+        <h1>Bu bir H1 Başlığıdır</h1>
+        <h2>Bu bir H2 Başlığıdır</h2>
+        <h3>Bu bir H3 Başlığıdır</h3>
+        <h4>Bu bir H4 Başlığıdır</h4>
+        <h5>Bu bir H5 Başlığıdır</h5>
+        <h6>Bu bir H6 Başlığıdır</h6>
+    </div>
+    <hr />
+
+    <div>
+        <h2>Paragraf ve span yapısı</h2>
+        <p>
+            Bu bir metin paragrafıdır. Birçok cümlenin ve kelimenin bir araya gelmesiyle oluşur.
+            <span style="font-weight:bold">Bu kısım bir spandir.</span>
+        </p>
+
+    </div>
+
+    <div>
+        <h2>Listeler</h2>
+        <div>
+            <h3>ul liste</h3>
+            <ul>
+                <li>1. Element</li>
+                <li>2. Element</li>
+                <li>3. Element</li>
+                <li>4. Element</li>
+            </ul>
+
+            <h3>ol liste</h3>
+            <ol>
+                <li>1. Element</li>
+                <li>2. Element</li>
+                <li>3. Element</li>
+                <li>4. Element</li>
+            </ol>
+        </div>
+    </div>
+
+    <div>
+        <h2>Link ve img yapısı</h2>
+
+        <label>text ile yönlendirme: </label>
+        <a href="https://www.google.com" target="_blank">
+            Google' a Git
+        </a>
+        <br />
+        <br />
+        <label>Resim ile yönlendirme: </label>
+        <a href="https://www.google.com" target="_blank">
+            <img src="~/Content/Google-Android-Yeni-Ekosistem-2.jpg" width="50" />
+        </a>
+
+    </div>
+
+    <div>
+        <h2>Table Yapısı</h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Başlık_1</th>
+                    <th>Başlık_2</th>
+                    <th>Başlık_3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td colspan="2">2</td>
+                </tr>
+                <tr>
+                    <td colspan="2">1</td>
+                    <td rowspan="2">2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+
+    <div style="margin-bottom:500px">
+        <h2>iframe Yapısı</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.49239798201!2d32.51220783880223!3d38.02741708831702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08d7875beafa1%3A0xb37942c252a61388!2sKonya%20Teknik%20%C3%9Cniversitesi.%20M%C3%BChendislik%20ve%20Do%C4%9Fa%20Bilimleri%20Fak%C3%BCltesi!5e0!3m2!1str!2str!4v1700215623081!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+</body>
+</html>
